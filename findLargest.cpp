@@ -8,7 +8,6 @@ int N = 4;
 int n;
 int i =0;
 int array[N];
-int largest;
 cout<<"What are the "<<N<<" number(s) you would like to find the largest of?"<<endl;
 while(N>i)
   {
