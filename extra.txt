@@ -1,0 +1,41 @@
+#include <iostream>
+using namespace std;
+#include "sieve.h"
+
+void primeNum(int n[])
+{
+  for(int i = 0; i < m_n; ++i)
+    n[i] = true;
+    for(int i = 2; i < m_n-1; )
+      {
+      if(count == 10001)
+        {
+        y<<i;
+        break;
+        }
+      for(int j = 2; (j*i) < m_n-1; ++j)
+        {
+        arr[i*j] = false;
+        }
+     for(int k = i+1; k < m_n-1; k++)
+        {
+        if(n[k])
+          {				
+            i=k;
+            ++y;
+            break;
+          }	
+        }
+
+}
+
+void display()
+{
+  cout<<n<<endl;
+}
+
+void read()
+{
+  cout<<"This program will find all primes between 2 and an entered number. Plese enter a number: "<<endl;
+  cin>>m_n;
+}
